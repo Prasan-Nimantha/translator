@@ -10,7 +10,7 @@ def translator(text, lang):
     authentication with the ibm language translator instance/function returns a dictionary with
     the translated text
     """
-    authenticator = IAMAuthenticator('aqN9P5bdcTcFD-fNty-Ag1R6Azc82p1HbxfTX6B_GXDP')
+    authenticator = IAMAuthenticator('key_aquired_by_ibm')
     language_translator = LanguageTranslatorV3(version='2018-05-01', authenticator=authenticator)
     language_translator.set_service_url(
         'https://api.us-south.language-translator.watson.cloud.ibm.com/instances/2598d376-0b24-4053-a279-aeabd167e5a8')
